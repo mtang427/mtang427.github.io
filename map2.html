@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Maps/Statistics</title>
+<style>
+table{background-color:skyblue; color: white; font-size: 20px;}
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px 90px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 79px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="BoopBoop.html" class="w3-bar-item w3-button" style="font-family:Lato">HOME</a>
+        <a href="book.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> STORIES </a>
+        <a href="map2.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> STATISTICS </a>
+        <a href="PovertyQuiz.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> TRIVIA GAME </a>
+        <a href="resources.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> RESOURCES </a>
+        <a href="doyourpart.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> DO YOUR PART! </a>
+        <a href="finalmeettheteam.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> MEET THE TEAM </a>
+        </a>
+      </div>
+    </div>
+
+<br>
+<br>
+<br>
+
+<center>
+<table border=1>
+  <tr>
+    <td style="font-family:Lato">
+      <center>
+    Click on New York, New Mexico, Louisiana, Alabama, Kentucky, Arkansas, District of Columbia, <br> Gerogia, West Virginia, Arizona, Texas, or Florida to learn more:
+</center>
+  </td>
+  </tr>
+ </table>
+<br> <hr> <br>
+<table border=1>
+<tr><th style="font-family:Lato"> Filter Your Statistic Choice </th> </tr> <tr> <td style="font-family:Lato"> <a href="#here1"> State </a> </td> </tr>  <tr> <td style="font-family:Lato"> <a href="#here2"> Ethnicity </a> </td> </tr>  <tr> <td style="font-family:Lato"> <a href="#here3"> Age  </a> </td> </tr>
+</table>
+<br>
+<br>
+<hr>
+<a name="here1"></a>
+<img src="Map.jpg" alt="Map" usemap="#americamap">
+<map name="americamap">
+  <area shape="circle" coords="1082,477,40" href="NewYork.jpg" alt="NewYork">
+  <area shape="circle" coords="434,748,40" href="NewMexico.jpg" alt="NewMexico">
+  <area shape="circle" coords="751,852,40" href="Louisiana.jpg" alt="Louisiana">
+  <area shape = "circle" coords = "877,799,40" href="Alabama.jpg" alt="Alabama">
+  <area shape = "circle" coords = "903,661,40" href="Kentucky.jpg" alt="Kentucky">
+  <area shape = "circle" coords = "741,752,40" href="Arkansas.jpg" alt="Arkansas">
+  <area shape = "circle" coords = "1165,655,40" href="District.jpg" alt="District of Columbia">
+  <area shape = "circle" coords = "953,790,40" href="Georgia.jpg" alt="Georgia">
+  <area shape = "circle" coords = "989,620,40" href="WestV.jpg" alt="West Virginia">
+  <area shape = "circle" coords = "296,740,40" href="Arizona.jpg" alt="Arizona">
+  <area shape = "circle" coords = "597,849,40" href="Texas.jpg" alt="Texas">
+  <area shape = "circle" coords = "1011,901,40" href="Florida.jpg" alt="Florida">
+</map>
+
+<br> <br> <hr> <br> <br>
+<a name="here2"></a>
+<img style="height:600px; width:800px;" src="pov4.png">
+<br> <br> <hr> <br> <br>
+<a name="here3"></a>
+<img style="height:600px; width:800px;" src="pov5.jpg">
+
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="map2.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </div>
+  <p>Powered by Girls Who Code </p>
+</footer>
+
+</body>
+</html>
