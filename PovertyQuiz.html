@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head></head>
+<style>
+body {background-image: url("poverty4.jpg"); background-repeat: no-repeat; background-size: cover; font-family: cursive;}
+p{font-family: cursive;}
+</style>
+<title>Poverty Quiz</title>
+
+<body>
+
+      <!-- Navbar (sit on top) -->
+      <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+          <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="BoopBoop.html" class="w3-bar-item w3-button" style="font-family:Lato">HOME</a>
+          <a href="book.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> STORIES </a>
+          <a href="map2.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> STATISTICS </a>
+          <a href="PovertyQuiz.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> TRIVIA GAME </a>
+          <a href="resources.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> RESOURCES </a>
+          <a href="doyourpart.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> DO YOUR PART! </a>
+          <a href="finalmeettheteam.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> MEET THE TEAM </a>
+          </a>
+        </div>
+      </div>
+
+<br>
+<br>
+
+<div class="w3-container w3-white">
+<h1> <center> <font face="Lato" size="7" color="black">How Much Do You Know About Poverty?</center> </font> </h1>
+</div>
+
+<script>
+alert("Welcome to our quiz!");
+</script>
+
+<div id="q1" class="w3-container w3-grey">
+<h3> <font face="Lato" size="6" color="black">Question One: </font></h3>
+</div>
+<blockquote>
+<p><font color = "white" face="Lato">In the U.S., 22% of children live in poverty, compared to under 5% in Western Europe. </p></font>
+<input type="radio" name="q1" value="trueq1" ><label for="q1a"><font color = "white" face="Lato">True</label><br/></font>
+<input type="radio" name="q1" value="falseq1" ><label for="q1a"><font color = "white" face="Lato">False</label><br/></font>
+</blockquote>
+
+
+<div id="q2" class="w3-container w3-grey">
+<h3> <font size="6" color="black" face="Lato"> Question Two: </font></h3>
+</div>
+
+<blockquote>
+<p><font color = "white" face="Lato">In 2011, the government reported that 15% of the total U.S. population, or 46 million people, live with incomes below the official poverty line.</p></font>
+<input type="radio" name="q2" value="trueq2" ><label for="q1a"><font color = "white" face="Lato">True</label><br/></font>
+<input type="radio" name="q2" value="faseq2" ><label for="q1a"><font color = "white" face="Lato">False</label><br/></font>
+</blockquote>
+
+<div id="q3" class="w3-container w3-grey">
+<h3> <font size="6" color="black" face="Lato"> Question Three: </font></h3>
+</div>
+
+<blockquote>
+<p><font color = "white" face="Lato">1 in 4 African Americans and Hispanics are poor.</p></font>
+<input type="radio" name="q3" value="trueq3" ><label for="q1a"><font color = "white" face="Lato">True</label><br/></font>
+<input type="radio" name="q3" value="falseq3" ><label for="q1a"><font color = "white" face="Lato">False</label><br/></font>
+</blockquote>
+
+<div id="q4" class="w3-container w3-grey">
+<h3> <font size="6" color="black" face="Lato"> Question Four: </font></h3>
+</div>
+
+<blockquote>
+<p><font color = "white" face="Lato">Overall, about 1 in 8 people are poor.</p></font>
+<input type="radio" name="q4" value="trueq4" ><label for="q1a"><font color = "white" face="Lato">True</label><br/></font>
+<input type="radio" name="q4" value="falseq4" ><label for="q1a"><font color = "white" face="Lato">False</label><br/></font>
+</blockquote>
+
+
+
+<div id="q5" class="w3-container w3-grey">
+<h3> <font size="6" color="black" face="Lato"> Question Five: </font></h3></div>
+<blockquote>
+<p><font color = "white" face="Lato">The smallest portion of poor people are white.</p></font>
+<input type="radio" name="q5" value="trueq5" ><label for="q1a"><font color = "white" face="Lato">True</label><br/></font>
+<input type="radio" name="q5" value="falseq5" ><label for="q1a"><font color = "white" face="Lato">False</label><br/></font>
+</blockquote>
+
+<br>
+<blockquote>
+<button onclick="score()" style="font-family:Lato"><b>Submit</button></font></b>
+</blockquote>
+
+<br>
+<br>
+
+<script>
+
+function score(){
+  var knowledge = 0;
+  var choice1= document.querySelector('input[name = "q1"]:checked').value;
+  if (choice1 == 'trueq1'){
+  knowledge++;
+  }
+
+  var choice2= document.querySelector('input[name = "q2"]:checked').value;
+  if (choice2 =='trueq2'){
+  knowledge++;
+  }
+
+
+  var choice3= document.querySelector('input[name = "q3"]:checked').value;
+  if (choice3 =='trueq3'){
+    knowledge++;
+  }
+
+
+  var choice4= document.querySelector('input[name = "q4"]:checked').value;
+  if (choice4 =='falseq4'){
+    knowledge++;
+  }
+
+
+  var choice5= document.querySelector('input[name = "q5"]:checked').value;
+  if (choice5 =='falseq5'){
+    knowledge++;
+  }
+
+  if (knowledge == '0') {
+    alert("You got 0 questions correct. The correct answers were true, true, true, false (Overall, about 1 in 6 people are poor), false (The largest portion of poor people, 45%, are white.)");
+  }
+  else if (knowledge == '1') {
+    alert("You got one question correct. The correct answers were true, true, true, false (Overall, about 1 in 6 people are poor), false (The largest portion of poor people, 45%, are white.)");
+  }
+  else if (knowledge == '2') {
+    alert("You got two questions correct. The correct answers were true, true, true, false (Overall, about 1 in 6 people are poor), false (The largest portion of poor people, 45%, are white.");
+  }
+  else if (knowledge == '3') {
+    alert("You got three questions correct. The correct answers were true, true, true, false (Overall, about 1 in 6 people are poor), false (The largest portion of poor people, 45%, are white.)");
+  }
+  else if (knowledge == '4') {
+    alert("You got four questions correct. The correct answers were true, true, true, false (Overall, about 1 in 6 people are poor), false (The largest portion of poor people, 45%, are white.)");
+  }
+  else if (knowledge == '5') {
+    alert("You got a perfect score!");
+  }
+  else {
+    alert("hi");
+  }
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+</script>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="povertyquiz.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </div>
+  <p>Powered by Girls Who Code </p>
+</footer>
+
+</body>
+</html>

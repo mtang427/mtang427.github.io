@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {background-image: url("rbackground.jpg"); background-repeat: no-repeat; background-size: cover;}
+p {font-size: 24px;}
+table{background-color: white;}
+
+</style>
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="BoopBoop.html" class="w3-bar-item w3-button" style="font-family:Lato">HOME</a>
+      <a href="book.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> STORIES </a>
+      <a href="map2.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> STATISTICS </a>
+      <a href="PovertyQuiz.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> TRIVIA GAME </a>
+      <a href="resources.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> RESOURCES </a>
+      <a href="doyourpart.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> DO YOUR PART! </a>
+      <a href="finalmeettheteam.html" class="w3-bar-item w3-button w3-hide-small" style="font-family:Lato"> MEET THE TEAM </a>
+      </a>
+    </div>
+  </div>
+
+<center>
+<br>
+<br>
+
+<p style="color:white; font-size:25px; font-family:Lato"> Which provisions do you need the most? </p>
+<select id="Choices" size="1" style="font-size:25px; font-family:Lato">
+ <option name="Choices"> Shelter </option>
+ <option name="Choices"> Food and Water </option>
+ <option name="Choices"> Clothes </option>
+ <option name="Choices"> Medicine </option>
+</select>
+
+<button type= "button" onclick="replace2()" style="font-size: 25px"> Submit! </button>
+<p id="no"> </p>
+</center>
+<script>
+function replace2() {
+  var x = document.getElementById("Choices");
+  var i = x.selectedIndex;
+    if (x.options[i].text=='Shelter'){
+      document.getElementById("no").innerHTML = "<table border=1>\
+      <tr> <th> Name </th> <th> Website </th> <th> General Information </th> <th> Contact Information </th> </tr>\
+      <tr>\
+        <td> Housing Assistance Online </td>\
+        <td> <a href='http://www.housingassistanceonline.com/'> View Here! </a></td>\
+        <td> An easy user-friendly website to provide emergency housing opportunities across all fifty states.</td>\
+        <td> Varies on Organization </td>\
+      </tr>\
+      <tr>\
+        <td> Low Income Housing </td>\
+        <td> <a href='http://www.lowincomehousing.us/'> View Here! </a></td>\
+        <td> Provides information on locatinng affordable rentals as well as housing options for low income families and individuals.</td>\
+        <td> LowIncomeSupport@gmail.com </td>\
+      </tr>\
+      <tr>\
+        <td> Transitional Housing </td>\
+        <td> <a href='http://www.transitionalhousing.org/'> View Here!</a> </td>\
+        <td> Provides worldwide assisstance on transitional housing lists and resources. </td>\
+        <td> 800-334-8893</td>\
+      </tr>\
+      <tr>\
+        <td> Rent Assistance  </td>\
+        <td> <a href='http://www.rentassistance.us/'>  View Here! </a> </td>\
+        <td> This organization provides a directory of rental assistance agencies and organizations that will help you pay your rent. Some listings are government organizations other are non-profits and charities that offer rental assistance programs.</td>\
+        <td> support@rentassisstance.us </td>\
+      </tr>\
+</table>"
+    }
+    else if (x.options[i].text=='Food and Water'){
+      document.getElementById("no").innerHTML = "<table border=1>\
+      <tr> <th> Name </th> <th> Website </th> <th> General Information </th> <th> Contact Information </th> </tr>\
+      <tr>\
+        <td> Regional Food Bank</td>\
+        <td> <a href='http://regionalfoodbank.net/'> View Here! </a></td>\
+        <td> The Regional Food Bank has been helping to feed the poor and hungry in our communities since 1982. The Food Bank collects large donations of food from the food industry and distributes it to charitable agencies serving hungry and disadvantaged people in 23 counties.</td>\
+        <td> 518-786-3691  </td>\
+      </tr>\
+      <tr>\
+        <td>  Feeding America </td>\
+        <td>  <a href='http://www.feedingamerica.org/'> View Here! </a> </td>\
+        <td>  The Feeding America network is meeting the needs of families across the country helping them build a brighter future. Their mission is to feed America’s hungry through a nationwide network of member food banks and engage our country in the fight to end hunger.</td>\
+        <td>  <a href='https://secure.feedingamerica.org/site/SPageServer;jsessionid=00000000.app220b?pagename=contactus&s_src=W177DIRCT&s_subsrc=http%3A%2F%2Fwww.feedingamerica.org%2F&_ga=2.186056105.1052490765.1501096401-1521846717.1501096401&NONCE_TOKEN=CC24D08FD1796368FC481A0B963CB37D'> Send an email! </a> </td>\
+      </tr>\
+      <tr>\
+        <td>  Feeding Bank Association of New York State</td>\
+        <td>  <a href='http://feedingnys.org/'> View Here!! </a></td>\
+        <td> Our mission is to ensure that every person in every community has access to good, healthy, food. We help the food banks of New York State obtain more food. We encourage donations and volunteer support.</td>\
+      </tr>\
+      <tr>\
+        <td> Feeding Hands </td>\
+        <td> <a href='http://www.feedinghandspantry.org/'> View Here! </a></td>\
+        <td> We will build an organization of excellence, modeling how to develop programs such as a pantry having profound impact on both the poor and those who serve them. Service to the poor, when done right, changes the lives of those in need, builds the discipleship walk of those who serve, and glorifies their creator. </td>\
+        <td> <a href='http://www.feedinghandspantry.org/?q=location-hours'> Locations & Hours  </td>\
+      </tr>\
+      </table>"
+    }
+    else if (x.options[i].text=='Medicine'){
+        document.getElementById("no").innerHTML = " <table border=1>\
+        <tr> <th> Name </th> <th> Website </th> <th> General Information </th> <th> Contact Information </th> </tr>\<tr>\
+          <td>  Coverage For All - Foundation for Health Care Coverage Education</td>\
+          <td>  <a href='coverageforall.org'> Click here! </a></td>\
+          <td>Their mission is to simplify public and private health insurance eligibility information in order to help more people to access coverage. It shows health care options in five easy steps. </td>\
+          <td> coverageforall.fhce@gmail.com</td>\
+        </tr>\
+        <tr>\
+          <td> Insure Kids Now</td>\
+          <td> <a href='insurekidsnow.gov'> Click here! </a></td>\
+          <td>Millions of children and teens qualify for free or low-cost health and dental coverage through Medicaid & the Children's Health Insurance Program (CHIP). </td>\
+          <td>1-877-543-7669  </td>\
+        </tr>\
+        <tr>\
+          <td> Human Resources and Services Administration</td>\
+          <td> <a href='findahealthcenter.hrsa.gov/'> Find them here! </a></td>\
+          <td> HRSA provides funds to Health Centers, hospitals, and other care facilities to help people get health care they can afford. </td>\
+          <td>  <a href='https://www.facebook.com/HRSAgov/'> Contact them here!</td>\
+        </tr>\
+        <tr>\
+          <td>  Rx Assist</td>\
+          <td> <a href='rxassist.org'> Click here.  </a></td>\
+          <td> Patient assistance programs are run by pharmaceutical companies to provide free medications to people who cannot afford to buy their medicine. RxAssist offers a comprehensive database of these patient assistance programs.</td>\
+          <td>  info@rxassist.org </td>\
+        </tr>\
+        </table>"
+      }
+    else if (x.options[i].text=='Clothes'){
+      document.getElementById("no").innerHTML = "<table border=1>\
+      <tr> <th> Name </th> <th> Website </th> <th> General Information </th> <th> Contact Information </th> </tr>\
+      <tr>\
+        <td>  GoodWill Store </td>\
+        <td>  <a href='https://www.goodwillnynj.org/'> Click here. </a></td>\
+        <td> People who shop at Goodwill support communities and protect our environment. Our proceeds go to help people with disabilities and disadvantages do powerful things, like find work, gain independence, and build careers. And, because our inventory is donated, it’s all green. </td>\
+        <td>  (718) 728-5400 </td>\
+      </tr>\
+      <tr>\
+        <td>  The Bowery Mission</td>\
+        <td>  <a href='https://www.bowery.org/programs/compassionate-care/clothing-showers/'> Click here!</a></td>\
+        <td> Such immediate and basic needs help our guests regain confidence in a day full of hardship. Whether it's a refreshing shower in the summer or a warming hot shower in the winter, our Clothing & Showers program offer practical help that is often a first step towards restoring dignity to our homeless neighbors.</td>\
+        <td> 212-674-3456 </td>\
+      </tr>\
+      <tr>\
+        <td> Salvation Army </td>\
+        <td> <a href='http://newyork.salvationarmy.org/'> Click here! </a></td>\
+        <td> Whether you need assistance with rent so you can keep a roof over your head, a bag of groceries to feed you and your family for the next week or simply a new pair of shoes so your son or daughter can walk to school with warm feet … we’re there.</td>\
+        <td> (212) 337-7200  </td>\
+      </tr>\
+      <tr>\
+        <td>Family Resource Center </td>\
+        <td>  <a href='http://partnershipforthehomeless.org/pages/contact-us/'> Click here! </a></td>\
+        <td> Founded nearly three decades ago to provide emergency shelter, our work has expanded over the years to include an array of services for New Yorkers experiencing homelessness, at risk for homelessness, or who are rebuilding their lives after leaving shelters.</td>\
+        <td>  718-875-0027</td>\
+      </tr>\
+      </table>"
+    }
+}
+
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+
+</script>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="resources.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </div>
+  <p>Powered by Girls Who Code </p>
+</footer>
+</body>
+</html>
